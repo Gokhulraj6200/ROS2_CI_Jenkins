@@ -65,7 +65,7 @@ RUN echo "source /ros2_ws/install/setup.bash" >> /root/.bashrc
 # Use the entrypoint to run your commands
 ENTRYPOINT ["/bin/bash", "-c", "source /ros2_ws/install/setup.bash && \
                               (ros2 launch tortoisebot_bringup mybringup.launch.py use_sim_time:=True &) && \
-                              sleep 8 && \
+                              sleep 20 && \
                               (ros2 run tortoisebot_waypoints tortoisebot_action_server &) && \
                               sleep 2 && \
                               colcon test --packages-select tortoisebot_waypoints --event-handler=console_direct+"]
