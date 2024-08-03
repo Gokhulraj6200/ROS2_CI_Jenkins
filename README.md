@@ -37,7 +37,7 @@ cat /home/user/jenkins__pid__url.txt
 
 - ros2_ci_test 
 
-This project is configured using freestyle method, to build this project manually go to the project and press "Build Now" button.
+This project is configured using pipeline method, to build this project manually go to the project and press "Build Now" button.
 
 #### Build CI Test by commit trigger request
 
